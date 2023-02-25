@@ -31,7 +31,7 @@ const brandSchema= new mongoose.Schema({
         ContactNumber:String,
         id:{
             type:ObjectId,
-            ref:"Supplire"
+            ref:"Supplier"
         }
     }],
     status:{
