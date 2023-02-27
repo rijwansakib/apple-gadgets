@@ -3,9 +3,12 @@ const { Schema } = mongoose;
 
 const aboutSchema = new Schema({
 
-  name: { type: String, required: false },
-  description: { type: String, required: false },
-  imageUrl: { type: String, required: true },
+  name: { 
+    type: String
+  },
+  description: {
+    type: String
+  },
 },{
     timestamps:true
 });
