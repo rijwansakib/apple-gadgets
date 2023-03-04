@@ -4,7 +4,7 @@ const cors=require("cors");
 const mongoose=require("mongoose");
 
 
-//modleWare
+//midleWare
 
 app.use(express.json());
 app.use(cors());
@@ -47,10 +47,10 @@ app.use("/api/v1/order",orderRoute);
 app.use("/api/v1/payment",paymentRoute);
 // app.use("/api/v1/product",productRoute);
 app.use("/api/v1/shipping",shippingRoute);
-// app.use("/api/v1/stock",stockRoute);
-// app.use("/api/v1/store",storeRoute);
-// app.use("/api/v1/supplire",supplireRoute);
-// app.use("/api/v1/user",userRoute);
+app.use("/api/v1/stock",stockRoute);
+app.use("/api/v1/store",storeRoute);
+app.use("/api/v1/supplire",supplireRoute);
+app.use("/api/v1/user",userRoute);
 
 
 module.exports = app;

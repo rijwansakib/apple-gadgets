@@ -27,7 +27,7 @@ const storeSchema = new Schema({
         name: String,
         contactNumber: String,
         id: {
-            type: ObjectId,
+            type:Schema.Types.ObjectId,
             ref: 'user'
         }
     },
